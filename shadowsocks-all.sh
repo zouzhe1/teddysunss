@@ -454,7 +454,7 @@ install_dependencies() {
         yum_depends=(
             unzip gzip openssl openssl-devel gcc python python-devel python-setuptools pcre pcre-devel libtool libevent xmlto
             autoconf automake make curl curl-devel zlib-devel perl perl-devel cpio expat-devel gettext-devel asciidoc
-            libev-devel
+            libev-devel c-ares c-ares-devel
         )
         for depend in ${yum_depends[@]}; do
             error_detect_depends "yum -y install ${depend}"
